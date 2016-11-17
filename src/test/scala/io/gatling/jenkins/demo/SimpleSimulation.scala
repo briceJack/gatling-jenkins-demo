@@ -16,5 +16,5 @@ class SimpleSimulation extends Simulation {
     scn.inject(
       atOnceUsers(1)))
     .protocols(httpProtocol)
-  .assertions(global.failedRequests.is(0))
+  .assertions(global.failedRequests.count.is(0))
 }
